@@ -19,6 +19,25 @@ header{
     box-shadow: 0 3px 20px black;
 }
 
+.subir{
+    display: none;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+}
+
+.subir a{
+    border-radius: 100%;
+    background-color: #04D9D9;
+    color: #265D73;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: solid 1px black;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+}
+
 .Container_Geral{
     width: 100%;   
     max-width: 1024px;
@@ -41,8 +60,6 @@ img{
 .conteinerda_do_logo{
     height: 10vh;
 }
-
-
 
 .cabecario a{
     text-decoration: none;
@@ -170,4 +187,126 @@ display: flex;
     color: #fff;
     font-size: 22px;
     align-items: center;
+}
+
+@media (max-width:425px){
+
+    .subir{
+        display: unset;
+    }
+    .subir a{
+        text-decoration: none;
+    }
+
+    .conteudo_primario{
+        padding-top: 2.5vh;
+    }
+
+    header{
+        position: static;
+    }
+
+    .cabecario{
+        flex-flow: column;
+        
+    }
+
+    .conteinerda_do_logo{
+        height: 70%;
+    }
+
+    .cabecario nav{
+        border-top: solid 1px #000000ab;
+        width: 80%;
+    }
+
+    nav a{
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .Apresentacao{
+        height: 200px;
+        padding: 0;
+    }
+
+    h1{
+        margin-left: 5px;
+        font-size: 18px;
+    }
+
+    .Container_de_img{
+        display: none;
+    }
+
+    .Container_de_descricao h3{
+        padding: 20px;
+    }
+
+    .Container_de_descricao ul{
+        text-align: left;
+        margin-left: 10vw;
+    }
+
+    .Galeria_de_img{
+        flex-flow: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .Container_de_galeria{
+        margin: 25px;
+        width:90%;
+        border-radius: 5px;
+        box-shadow: 0 0 10px 1px;
+    }
+    
+    .Container_de_imagem_de_galeria img{
+        background-position: center;
+        border-radius: 5px 5px 0 0;
+    }
+    
+    .Container_de_paragrafo_de_galeria{
+        border-radius: 0 0 5px 5px;
+        padding: 5%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rodape{
+        height: auto;
+    }
+}
+
+@media (min-width:426px) and (max-width:768px){
+    .Apresentacao{
+        height: 300px;
+    }
+
+    h1{
+        font-size: 22px;
+    }
+    
+    
+}
+
+@media (min-width:769px) and (max-width: 1024px){
+    .Apresentacao{
+        height: 400px;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .Apresentacao{
+        height: 500px;
+    }
+
+    h1{
+        font-size: 32px;
+    }
 }
