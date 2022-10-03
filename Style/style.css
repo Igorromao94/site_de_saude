@@ -22,12 +22,8 @@ header{
 .Container_Geral{
     width: 100%;   
     max-width: 1024px;
-    
     margin: 0 auto;
-
     display: flex;
-    flex-flow: row nowrap;
-
     justify-content: center;
     align-items: center;
 }
@@ -69,11 +65,9 @@ nav{
 /* Inicio da apresentação do site */
 .Apresentacao{
     padding-top: 10vh;
-
     width: 100%;
     height: 60vh;
-
-    background: url(/Projeto_espancivo_de_telas/assets/recepcao.png);
+    background: url(/assets/recepcao.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -113,7 +107,6 @@ nav{
 .Container_de_alinhamento_lateral{
     display: flex;
     flex-flow: row nowrap;
-
     justify-content: center;
     align-items: center;
 }
@@ -122,8 +115,7 @@ nav{
 /* Galeria de img */
 .Galeria_de_img{
     width: 100%;
-
-    display: flex;
+display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
 }
@@ -157,6 +149,25 @@ nav{
     text-decoration: none;
 }
 
-.contencao{
-    flex-direction: column;
+.contato div{
+    line-height: 28px;
+}
+
+.rodape{
+    background-color: #265D73;
+    flex-flow: column;
+    text-align: center;
+    justify-content: space-around;
+    height: 40vh;
+}
+
+.Roda_pe_descricao{
+    height: 60%;
+    line-height: 36px;
+}
+
+.Roda_pe_descricao p{
+    color: #fff;
+    font-size: 22px;
+    align-items: center;
 }
