@@ -1,4 +1,4 @@
-/*#265d73*/
+/* Comandos universais */
 *{
     margin: 0;
     padding: 0;
@@ -9,304 +9,415 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-header,main,footer{
+.cabecario__img,.rodape__img,.sobre__img,.Especialidades__img,.Especialidades__img{
+    width: 100%;
+    height: 100%;
+}
+
+.cabecario,.rodape,.principal,.sobre{
     width: 100%;
 }
 
-header{
+.cor-geral{
+    color: #000000ab;
+}
+
+.centralizar{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Inicio do cabeçario */
+
+.cabecario{
     position: fixed;
+
     background-color: #04D9D9;
     box-shadow: 0 3px 20px black;
 }
 
-.subir{
-    display: none;
-    position: fixed;
-    right: 10px;
-    bottom: 20px;
-}
+.cabecario--flex{
+    height: 10vh;
 
-.subir a{
-    border-radius: 100%;
-    background-color: #04D9D9;
-    color: #265D73;
-    font-weight: bold;
-    text-transform: uppercase;
-    border: solid 1px black;
-    text-align: center;
-    justify-content: center;
-    padding: 15px;
-}
-
-.Container_Geral{
-    width: 100%;   
-    max-width: 1024px;
-    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-img{
-    width: 100%;
-    height: 100%;
-}
-
-/* Inicio do cabeçario */
-.cabecario{
+    flex-flow: row nowrap;
     justify-content: space-between;
 }
 
-.conteinerda_do_logo{
-    height: 10vh;
+.cabecario__link-log{
+    margin-left: 10px;
 }
 
-.cabecario a{
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    
-}
+.cabecario__nav{
+    margin-right: 10px;
 
-.cabecario a:hover{
-    color:#265D73;
-}
-
-nav{
-    width: 30%;
     display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
     justify-content: space-evenly;
 }
 
-
-/* Inicio da apresentação do site */
-.Apresentacao{
-    padding-top: 10vh;
-    width: 100%;
-    height: 60vh;
-    background: url('../assets/recepcao.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.Centralizacao{
-    width: 100%;
-    height: 100%;
-    justify-content: left;
-    color: #fff;
-}
-
-.Centralizacao h1{
-    font-weight: normal;
-}
-
-
-/* Inicio da apresentação do conteudo */
-.conteudo{
-    color: #000000ab;
-}
-
-.conteudo_primario{
-    padding-top: 10vh;
-    flex-flow: column;
-    text-align: center;
-}
-
-.Titulos_e_Descricao h2{
+.cabecario__nav__link{
     padding: 10px;
-}
-
-.Titulos_e_Descricao p{
-    padding: 10px;
-}
-
-.Container_de_alinhamento_lateral{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* Galeria de img */
-.Galeria_de_img{
-    width: 100%;
-display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-}
-
-.Container_de_galeria{
-    margin: 25px;
-    width: calc((100% / 3 ) - 30px);
-    border-radius: 5px;
-    box-shadow: 0 0 10px 1px;
-}
-
-.Container_de_imagem_de_galeria img{
-    background-position: center;
-    border-radius: 5px 5px 0 0;
-}
-
-.Container_de_paragrafo_de_galeria{
-    border-radius: 0 0 5px 5px;
-    padding: 5%;
     text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.conteudo_primario a{
-    padding: 10px 20px;
-    color: #fff;
-    background-color: #04D9D9;
-    text-transform: uppercase;
-    font-weight: bold;
     text-decoration: none;
-}
-
-.contato div{
-    line-height: 28px;
-}
-
-.rodape{
-    background-color: #265D73;
-    flex-flow: column;
-    text-align: center;
-    justify-content: space-around;
-    height: 40vh;
-}
-
-.Roda_pe_descricao{
-    height: 60%;
-    line-height: 36px;
-}
-
-.Roda_pe_descricao p{
     color: #fff;
-    font-size: 22px;
-    align-items: center;
+    font-weight: bold;
 }
 
-@media (max-width:425px){
+.cabecario__nav__link:hover{
+    color: #265D73;
+}
 
-    .subir{
-        display: unset;
+/* inicio do main */
+
+    /* Botão flutuante */
+
+    .btn{
+        position: fixed;
+        right: 15px;
+        bottom: 15px;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background-color: #04D9D9;
+        box-shadow: 0 0 15px 3px;
+        border: none;
     }
-    .subir a{
+
+    .tbn__link{
+        width: 100%;
+        height: 100%;
         text-decoration: none;
     }
 
-    .conteudo_primario{
-        padding-top: 2.5vh;
-    }
-
-    header{
-        position: static;
-    }
-
-    .cabecario{
-        flex-flow: column;
-        
-    }
-
-    .conteinerda_do_logo{
-        height: 70%;
-    }
-
-    .cabecario nav{
-        border-top: solid 1px #000000ab;
-        width: 80%;
-    }
-
-    nav a{
-        font-size: 16px;
-        padding: 5px;
-    }
-
-    .Apresentacao{
-        height: 200px;
-        padding: 0;
-    }
-
-    h1{
-        margin-left: 5px;
-        font-size: 18px;
-    }
-
-    .Container_de_img{
+    .btn--atividade{
         display: none;
     }
 
-    .Container_de_descricao h3{
-        padding: 20px;
-    }
+    /* Apresentacao inicial */
+    .apresentacao{
+        width: 100%;
+        height: 60vh;
+        padding-top: 10vh;
 
-    .Container_de_descricao ul{
-        text-align: left;
-        margin-left: 10vw;
-    }
-
-    .Galeria_de_img{
-        flex-flow: column;
-        align-items: center;
-        width: 90%;
-    }
-
-    .Container_de_galeria{
-        margin: 25px;
-        width:90%;
-        border-radius: 5px;
-        box-shadow: 0 0 10px 1px;
-    }
-    
-    .Container_de_imagem_de_galeria img{
+        background: url('../assets/recepcao.png');
         background-position: center;
-        border-radius: 5px 5px 0 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+    } 
+
+    .Apresentacao--flex{
+        height: 100%;
+
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: left;
     }
-    
-    .Container_de_paragrafo_de_galeria{
-        border-radius: 0 0 5px 5px;
-        padding: 5%;
+
+    .Apresentacao_titulo{
+        margin-left: 20px;
+        align-items: center;
+
+        color: #fff;
+        font-weight: normal;
+    }
+
+    /* Sobre */
+
+    .sobre--flex{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .sobre__apresentacao,.Especialidades__apresentacao{
+        padding-top: 10vh;
+        margin: 0 auto;
+        width: 60%;
         text-align: center;
+    }
+
+    .sobre__paragrafo,.Especialidades__paragrafo{
+        padding: 10px;
+    }
+
+    .sobre__conteudo--flex{
+        display: flex;
+        flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
     }
 
-    .rodape{
+    .sobre__img--estado{
+        display: static;
+    }
+
+    .sobre__descricao__titulo{
+        font-weight: normal;
+        text-align: left;
+        text-transform: uppercase;
+        padding: 20px 0;
+    }
+
+    .sobre__ul{
+        margin-left: 10px;
+    }
+
+    /* Especialidades */
+    /* o titulo de apresentações estão juntos em sobre__apresentacao*/
+    
+    .Especialidades__Galeria{
+        margin-top: 30px;
+    }
+
+    .Especialidades--flex{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .Galeria--flex{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+    }
+
+    .Especialidades__caixa{
+        background-color: white;
+        box-shadow: 0 0 15px;
+        border-radius: 5px;
+        
+    }
+
+    .caixa--flex{
+        display: flex;
+        flex-flow: column nowrap;
+        width: calc((100% / 3 ) - 60px );
+    }
+
+    .Especialidades__img{
+        border-radius: 5px 5px 0 0;
+    }
+
+    .Especialidades__container-p{
+        height: 40px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .Especialidades__link{
+        width: 120px;
+        margin: 35px auto 0 auto;
+        background-color: #04D9D9;
+        padding: 15px 20px;
+
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        color: #fff;
+    }
+
+    .Especialidades__link:hover{
+        color: #265D73;
+    }
+
+    /* Contato */
+    .contato{
+        padding-top: 10vh;
+    }
+
+    .contato--flex{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contato__titulo{
+        box-sizing: border-box;
+        margin: 5px;
+    }
+
+    .contato__paragrafo{
+        width: 60%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .mapa{
+        box-sizing: border-box;
+    }
+/* Inicio do roda pé */
+
+.rodape{
+    margin-top: 30px;
+    background-color: #265D73;
+    flex-flow: column;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.rodape__centralizador{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.rodape__caixa-img{
+    width: 200px;
+    padding: 0 20px;
+}
+
+.rodape__informacao{
+    padding-bottom: 20px;
+}
+
+.rodape__paragrafo{
+    color: #fff;
+    font-size: 18px;
+    padding: 5px;
+}
+
+@media (max-width: 425px){
+    
+    .cabecario{
+        position: static;
+    }
+
+    .cabecario--flex{
         height: auto;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .cabecario__link-log{
+        margin: 0 auto;
+        width: 30%;
+    }
+
+    .cabecario__nav{
+        width: 90%;
+        margin: 0 auto;
+        border-top: solid 1px #000000ab;
+    }
+
+    .apresentacao{
+        width: 100%;
+        height: 200px;
+        padding: 0;
+    }
+
+    .Apresentacao_titulo{
+        font-size: 18px;
+    }
+
+    .sobre__apresentacao, .Especialidades__apresentacao{
+        padding-top: 30px;
+        width: 100%;
+    }
+
+    .sobre--flex{
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .sobre__img--estado{
+        display: none;
+    }
+
+    .sobre__ul{
+        margin-left: 30px;
+    }
+
+    .Galeria--flex{
+        flex-flow: column wrap;
+        width: 100%;
+        align-items: center;
+    }
+
+    .caixa--flex{
+        width: 90%;
+        margin: 20px;
+    }
+
+    .contato__paragrafo{
+        width: 100%;
     }
 }
 
-@media (min-width:426px) and (max-width:768px){
-    .Apresentacao{
+@media (min-width: 426px) and (max-width: 768px){
+    
+    cabecario{
+        position: static;
+    }
+
+    .cabecario--flex{
+        height: auto;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .cabecario__link-log{
+        margin: 0 auto;
+        width: 30%;
+    }
+
+    .cabecario__nav{
+        width: 90%;
+        margin: 0 auto;
+        border-top: solid 1px #000000ab;
+    }
+
+    .apresentacao{
+        width: 100%;
         height: 300px;
     }
 
-    h1{
-        font-size: 22px;
+    .sobre__apresentacao, .Especialidades__apresentacao{
+        width: 80%;
     }
-    
-    
+
+    .sobre__img--estado{
+        display: none;
+    }
+
+    .sobre__ul{
+        margin-left: 30px;
+    }
+
+    .Galeria--flex{
+        flex-flow: row wrap;
+    }
+
+    .caixa--flex{
+        width: calc((100% /3 ) - 10px );
+        margin: 20px;
+    }
+
+    .contato{
+        padding-top: 22px;
+    }
 }
 
-@media (min-width:769px) and (max-width: 1024px){
-    .Apresentacao{
+@media (min-width: 768px) and (max-width: 1024px){
+    .apresentacao{
+        width: 100%;
         height: 400px;
     }
-
-    h1{
-        font-size: 32px;
-    }
 }
 
-@media (min-width: 1024px) {
-    .Apresentacao{
+@media (min-width: 1024px){
+    .apresentacao{
+        width: 100%;
         height: 500px;
-    }
-
-    h1{
-        font-size: 32px;
     }
 }

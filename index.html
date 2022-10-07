@@ -29,150 +29,149 @@
 <body>
 <!-- Inicio da pagina -->
     <!-- Inicio do cabeçario -->
-    <header id="top">
-        <div class="Container_Geral cabecario">
-            <a class="conteinerda_do_logo" href="index.html">
-                <img src="assets/logo.png" alt="Logo tipo" title="Clínica Médica Life">
+    <header id="cabecario" class="cabecario">
+        <div class="centralizar cabecario--flex">
+            <a class="cabecario__link-log" href="index.html">
+                <img class="cabecario__img" src="assets/logo.png" alt="Logo tipo" title="Clínica Médica Life">
             </a>
             
-            <nav class="links_do_topo">
-                    <a href="#sobre">Sobre</a>
-                    <a href="especialidades.html">Especialidades</a>
-                    <a href="#contato">Contato</a>
+            <nav class="cabecario__nav">
+                    <a class="cabecario__nav__link" href="#sobre">Sobre</a>
+                    <a class="cabecario__nav__link" href="especialidades.html">Especialidades</a>
+                    <a class="cabecario__nav__link" href="#contato">Contato</a>
             </nav>
         </div>
     </header>
     <!-- Fim do cabeçario -->
 
     <!-- Inicio da parte principal -->
-    <main>
-            <div class="subir">
-                <a href="#top">
-                    subir
-                </a>
+    <main class="principal">
+        <button class="btn btn--atividade">
+            <a class="tbn__link" href="#cabecario">
+                ⇡
+            </a>           
+        </button>
+        <section class="apresentacao">
+            <div class="centralizar Apresentacao--flex">
+                <h1 class="Apresentacao_titulo">
+                    CLÍNICA MÉDICA LIFE <br>
+                    AQUI A GENTE CUIDA DE VOCÊ
+                </h1>
             </div>
-            <section class="Apresentacao">
-                <div class="Container_Geral Centralizacao">
-                    <h1>
-                        CLÍNICA MÉDICA LIFE <br>
-                        AQUI A GENTE CUIDA DE VOCÊ
-                    </h1>
-                </div>
-            </section>
-        
-            <section id="sobre" class="sobre conteudo">
-                <div class="Container_Geral conteudo_primario">
-                        
-                        <div class="Titulos_e_Descricao">
-                            <h2>Sobre a clínica</h2>
-                            <p>Nossa clínica está pronta para receber nossos pacientes através de uma excelente estrutura, comodidade e com a segurança de que você precisam.</p>
-                        </div>
-
-                        <div class="Container_de_alinhamento_lateral">
-                            <div class="Container_de_img">
-                                <img src="assets/medico.jpg" alt="">
-                            </div>
-            
-                            <div class="Container_de_descricao">
-                                <h3>Aqui na nossa clínica você vai encontrar:</h3>
-                                <ul>
-                                    <li>Horário flexível. Atendemos de segunda à sábado.</li>
-                                    <li>Estacionamento amplo com 600 vagas.</li>
-                                    <li>Sala de espera com TV e Wifi.</li>
-                                    <li>Agendamento pelo telefone ou WhatsApp.</li>
-                                    <li>Excelente localização.</li>
-                                    <li>Entrega de exames em sua residência.</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                </div>
-            </section>
-
-        <section id="Especialidades" class="Especialidades container_geral">
-            <div class="Container_Geral conteudo_primario">
-                <div class="Titulos_e_Descricao conteudo">
-                    <h2>Uma clínica de multiespecialidade</h2>
-                    <p>Nossa clínica possui diversas especialidades. Como ortopedia, pediatra, geriatria, psicologia, fisioterapia e outros.</p>
+        </section>
+    
+        <section id="sobre" class="sobre">
+            <div class="centralizar sobre--flex">
+                <div class="sobre__apresentacao cor-geral">
+                    <h2 class="sobre__titulo">Sobre a clínica</h2>
+                    <p class="sobre__paragrafo">Nossa clínica está pronta para receber nossos pacientes através de uma excelente estrutura, comodidade e com a segurança de que você precisam.</p>
                 </div>
 
-                <div class="Galeria_de_img">
-                    <div class="Container_de_galeria">
-                        <div class="Container_de_imagem_de_galeria">
-                           <img src="assets/ortopedia1.png" alt="">
+                <div class="sobre__conteudo sobre__conteudo--flex cor-geral">
+                    <div class="sobre__container-img sobre__img--estado">
+                        <img class="sobre__img" src="assets/medico.jpg" alt="">
+                    </div>
+    
+                    <div class="sobre__descricao">
+                        <h3 class="sobre__descricao__titulo">Aqui na nossa clínica você vai encontrar:</h3>
+                        <ul class="sobre__ul">
+                            <li class="sobre__itens">Horário flexível. Atendemos de segunda à sábado.</li>
+                            <li class="sobre__itens">Estacionamento amplo com 600 vagas.</li>
+                            <li class="sobre__itens">Sala de espera com TV e Wifi.</li>
+                            <li class="sobre__itens">Agendamento pelo telefone ou WhatsApp.</li>
+                            <li class="sobre__itens">Excelente localização.</li>
+                            <li class="sobre__itens">Entrega de exames em sua residência.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Especialidades" class="Especialidades cor-geral">
+            <div class="centralizar Especialidades--flex">
+                <div class="Especialidades__apresentacao ">
+                    <h2 class="Especialidades__titulo">Uma clínica de multiespecialidade</h2>
+                    <p class="Especialidades__paragrafo">Nossa clínica possui diversas especialidades. Como ortopedia, pediatra, geriatria, psicologia, fisioterapia e outros.</p>
+                </div>
+
+                <div class="Especialidades__Galeria Galeria--flex">
+                
+                    <div class="Especialidades__caixa caixa--flex">
+                        <div class="Especialidades__cointainer-img">
+                            <img class="Especialidades__img" src="assets/ortopedia1.png" alt="">
                         </div>
 
-                        <div class="Container_de_paragrafo_de_galeria">
-                            <p>
+                        <div class="Especialidades__container-p">
+                            <p class="Especialidades__p">
                                 ORTOPEDIA
                             </p>
                         </div>
                     </div>
 
-                    <div class="Container_de_galeria">
-                        <div class="Container_de_imagem_de_galeria">
-                            <img src="assets/pediatra.png" alt="">
+                    <div class="Especialidades__caixa caixa--flex">
+                        <div class="Especialidades__cointainer-img">
+                            <img class="Especialidades__img" src="assets/pediatra.png" alt="">
                         </div>
 
-                        <div class="Container_de_paragrafo_de_galeria">
-                            <p>
+                        <div class="Especialidades__container-p">
+                            <p class="Especialidades__p">
                                 PEDIATRIA
                             </p>
                         </div>
                     </div>
 
-                    <div class="Container_de_galeria">
-                        <div class="Container_de_imagem_de_galeria">
-                            <img src="assets/geriatra.png" alt="">
+                    <div class="Especialidades__caixa caixa--flex">
+                        <div class="Especialidades__cointainer-img">
+                            <img class="Especialidades__img" src="assets/geriatra.png" alt="">
                         </div>
 
-                        <div class="Container_de_paragrafo_de_galeria">
-                            <p>
+                        <div class="Especialidades__container-p">
+                            <p class="Especialidades__p">
                                 GERIATRIA
                             </p>
                         </div>
                     </div>
+                
                 </div>
-
-                <a href="especialidades.html">Ver Horários</a>
+                <a class="Especialidades__link" href="especialidades.html">Ver Horários</a>
             </div>
         </section>
 
-        <section id="contato" class="contato">
+        <section id="contato" class="contato cor-geral">
 
-            <div class="Container_Geral conteudo_primario conteudo">
-                <h2>Contato</h2>
+            <div class="centralizar contato__caixa contato--flex">
+                <h2 class="contato__titulo">Contato</h2>
             
-                <p>
-                    Nossa clínica médica está aberto de <strong> segunda à sábado das 6:00 às 21:00</strong>
+                <p class="contato__paragrafo">
+                    Nossa clínica médica está aberto de <strong class="contato_paragrafo__forte"> segunda à sábado das 6:00 às 21:00</strong>
                 </p>
     
-                <p>
-                    Através do telefone/WhatsApp <strong>(21) 99966-5555</strong>  você pode fazer o agendamento de consultas e exames.
+                <p class="contato__paragrafo">
+                    Através do telefone/WhatsApp <strong class="contato_paragrafo__forte">(21) 99966-5555</strong>  você pode fazer o agendamento de consultas e exames.
                 </p>
                 
-                <p>
-                    Estamos localizados no estacionamento do Via Parque Shopping <strong>av. Ayrton Senna, 3000 - Barra da Tijuca, Rio de Janeiro</strong>.
+                <p class="contato__paragrafo">
+                    Estamos localizados no estacionamento do Via Parque Shopping <strong class="contato_paragrafo__forte">av. Ayrton Senna, 3000 - Barra da Tijuca, Rio de Janeiro</strong>.
                 </p>
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.1179281118166!2d-43.3663797858226!3d-22.98269058497327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda2c2293fa63%3A0x539cb07246f0e38d!2sVia%20Parque%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1663790751669!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.1179281118166!2d-43.3663797858226!3d-22.98269058497327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda2c2293fa63%3A0x539cb07246f0e38d!2sVia%20Parque%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1663790751669!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
     </main>
     <!-- Fim da parate principal -->
 
     <!-- Inicio do Rodapé -->
-    <footer>
-        <div class="Container_Geral rodape">
-            <div class="Roda_pe_img">
-                <img src="assets/logo.png" alt="Logo tipo">
+    <footer class="rodape">
+        <div class="rodape__centralizador">
+            <div class="rodape__caixa-img">
+                <img class="rodape__img" src="assets/logo.png" alt="Logo tipo">
             </div>
             
             
-            <div class="Roda_pe_descricao">
-                <p>Telefone e WhatsApp: (21) 99966-5555</p>
-                <p>Endereço: Av. Ayrton Senna, 3000 - Barra da Tijuca, Rio de Janeiro</p>
-                <p>&copy; 2020 Clínica Médica Life  - Todos os direitos reservados</p>
+            <div class="rodape__informacao">
+                <p class="rodape__paragrafo">Telefone e WhatsApp: (21) 99966-5555</p>
+                <p class="rodape__paragrafo">Endereço: Av. Ayrton Senna, 3000 - Barra da Tijuca, Rio de Janeiro</p>
+                <p class="rodape__paragrafo">&copy; 2020 Clínica Médica Life  - Todos os direitos reservados</p>
             </div>
         </div>
     </footer>

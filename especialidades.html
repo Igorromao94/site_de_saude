@@ -8,8 +8,14 @@
     <!-- Fim das metas tags -->
 
     <!-- Inicio dos Links de CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style/style.css">
     <!-- Fim dos Links de CSS -->
+
+    <!-- Inicio dos links externos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Fim dos links externos -->
 
     <!-- Inicio do javascript -->
     <!-- Colocar algo aqui <<<<<<<<< -->
@@ -23,19 +29,16 @@
 <body>
 <!-- Inicio da pagina -->
     <!-- Inicio do cabeçario -->
-    <header>
-        <div>
-            <a href="index.html">
-                <img src="assets/logo.png" alt="Logo tipo" title="Clínica Médica Life">
+    <header id="cabecario" class="cabecario">
+        <div class="centralizar cabecario--flex">
+            <a class="cabecario__link-log" href="index.html">
+                <img class="cabecario__img" src="assets/logo.png" alt="Logo tipo" title="Clínica Médica Life">
             </a>
-        </div>
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="especialidades.html">Especialidades</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
+            
+            <nav class="cabecario__nav">
+                    <a class="cabecario__nav__link" href="index.html#sobre">Sobre</a>
+                    <a class="cabecario__nav__link" href="especialidades.html">Especialidades</a>
+                    <a class="cabecario__nav__link" href="index.html#contato">Contato</a>
             </nav>
         </div>
     </header>
@@ -43,16 +46,31 @@
 
     <!-- Inicio da parte principal -->
     <main>
-        
+        <nav class="navegador">
+            <a href="#">Ortopedia</a>
+            <a href="#">Pediatria</a>
+            <a href="#">Geriatra</a>
+            <a href="#">Psicologia</a>
+            <a href="#">Fisioterapia</a>
+        </nav>
+      
     </main>
     <!-- Fim da parate principal -->
 
     <!-- Inicio do Rodapé -->
-    <footer>
-        <img src="assets/logo.png" alt="Logo tipo">
-        <p>Telefone e WhatsApp: (21) 99966-5555</p>
-        <p>Endereço: Av. Ayrton Senna, 3000 - Barra da Tijuca, Rio de Janeiro</p>
-        <p>&copy; 2020 Clínica Médica Life  - Todos os direitos reservados</p>
+    <footer class="rodape">
+        <div class="rodape__centralizador">
+            <div class="rodape__caixa-img">
+                <img class="rodape__img" src="assets/logo.png" alt="Logo tipo">
+            </div>
+            
+            
+            <div class="rodape__informacao">
+                <p class="rodape__paragrafo">Telefone e WhatsApp: (21) 99966-5555</p>
+                <p class="rodape__paragrafo">Endereço: Av. Ayrton Senna, 3000 - Barra da Tijuca, Rio de Janeiro</p>
+                <p class="rodape__paragrafo">&copy; 2020 Clínica Médica Life  - Todos os direitos reservados</p>
+            </div>
+        </div>
     </footer>
     <!-- Final do Rodapé -->
 <!-- Fim da pagina -->
