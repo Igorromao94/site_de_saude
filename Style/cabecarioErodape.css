@@ -1,3 +1,4 @@
+    /* Comandos universais */
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +12,16 @@ body{
 img{
     width: 100%;
     height: 100%;
+}
+
+.cor-geral{
+    color: #000000ab;
+}
+
+.centralizar{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .cabecario,.rodape,.principal,.sobre{
