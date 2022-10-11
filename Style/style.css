@@ -1,291 +1,183 @@
-/* Comandos universais */
-
-
-
-
-thead{
+.btn{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
     background-color: #04D9D9;
+    box-shadow: 0 0 15px 3px;
+    border: none;
+}
+
+.tbn__link{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.btn--atividade{
+    display: none;
+}
+
+/* Apresentacao inicial */
+.apresentacao{
+    width: 100%;
+    height: 60vh;
+    padding-top: 10vh;
+
+    background: url('../assets/recepcao.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+.Apresentacao--flex{
+    height: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: left;
+}
+
+.Apresentacao_titulo{
+    margin-left: 20px;
+    align-items: center;
+
     color: #fff;
+    font-weight: normal;
 }
 
-/* inicio do main */
+/* Sobre */
 
-    /* Botão flutuante */
-
-    .btn{
-        position: fixed;
-        right: 15px;
-        bottom: 15px;
-        width: 30px;
-        height: 30px;
-        border-radius: 100%;
-        background-color: #04D9D9;
-        box-shadow: 0 0 15px 3px;
-        border: none;
-    }
-
-    .tbn__link{
-        width: 100%;
-        height: 100%;
-        text-decoration: none;
-    }
-
-    .btn--atividade{
-        display: none;
-    }
-
-    /* Apresentacao inicial */
-    .apresentacao{
-        width: 100%;
-        height: 60vh;
-        padding-top: 10vh;
-
-        background: url('../assets/recepcao.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    } 
-
-    .Apresentacao--flex{
-        height: 100%;
-
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        justify-content: left;
-    }
-
-    .Apresentacao_titulo{
-        margin-left: 20px;
-        align-items: center;
-
-        color: #fff;
-        font-weight: normal;
-    }
-
-    /* Sobre */
-
-    .sobre--flex{
-        display: flex;
-        flex-flow: column nowrap;
-    }
-
-    .sobre__apresentacao,.Especialidades__apresentacao{
-        padding-top: 10vh;
-        margin: 0 auto;
-        width: 60%;
-        text-align: center;
-    }
-
-    .sobre__paragrafo,.Especialidades__paragrafo{
-        padding: 10px;
-    }
-
-    .sobre__conteudo--flex{
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .sobre__img--estado{
-        display: static;
-    }
-
-    .sobre__descricao__titulo{
-        font-weight: normal;
-        text-align: left;
-        text-transform: uppercase;
-        padding: 20px 0;
-    }
-
-    .sobre__ul{
-        margin-left: 10px;
-    }
-
-    /* Especialidades */
-    /* o titulo de apresentações estão juntos em sobre__apresentacao*/
-    
-    .Especialidades__Galeria{
-        margin-top: 30px;
-    }
-
-    .Especialidades--flex{
-        display: flex;
-        flex-flow: column nowrap;
-    }
-
-    .Galeria--flex{
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-evenly;
-    }
-
-    .Especialidades__caixa{
-        background-color: white;
-        box-shadow: 0 0 15px;
-        border-radius: 5px;
-        
-    }
-
-    .caixa--flex{
-        display: flex;
-        flex-flow: column nowrap;
-        width: calc((100% / 3 ) - 60px );
-    }
-
-    .Especialidades__img{
-        border-radius: 5px 5px 0 0;
-    }
-
-    .Especialidades__container-p{
-        height: 40px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .Especialidades__link{
-        width: 120px;
-        margin: 35px auto 0 auto;
-        background-color: #04D9D9;
-        padding: 15px 20px;
-
-        text-align: center;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: bold;
-
-        color: #fff;
-    }
-
-    .Especialidades__link:hover{
-        color: #265D73;
-    }
-
-    /* Contato */
-    .contato{
-        padding-top: 10vh;
-    }
-
-    .contato--flex{
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contato__titulo{
-        box-sizing: border-box;
-        margin: 5px;
-    }
-
-    .contato__paragrafo{
-        width: 60%;
-        text-align: center;
-        margin: 10px;
-    }
-
-    .mapa{
-        box-sizing: border-box;
-    }
-
-
-
-/* Pagina 2 especialidades.html */
-.inicio{
-padding-top: 10vh;
-}
-
-.inicio--flex{
+.sobre--flex{
     display: flex;
     flex-flow: column nowrap;
+}
+
+.sobre__apresentacao,.Especialidades__apresentacao{
+    padding-top: 10vh;
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+}
+
+.sobre__paragrafo,.Especialidades__paragrafo{
+    padding: 10px;
+}
+
+.sobre__conteudo--flex{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
     align-items: center;
 }
 
-.navegador{
-    width: 80%;
-    height: 50px;
+.sobre__img--estado{
+    display: static;
 }
 
-.navegador--flex{
+.sobre__descricao__titulo{
+    font-weight: normal;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.sobre__ul{
+    margin-left: 10px;
+}
+
+/* Especialidades */
+/* o titulo de apresentações estão juntos em sobre__apresentacao*/
+
+.Especialidades__Galeria{
+    margin-top: 30px;
+}
+
+.Especialidades--flex{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
+}
+
+.Galeria--flex{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.Especialidades__caixa{
+    background-color: white;
+    box-shadow: 0 0 15px;
+    border-radius: 5px;
+    
+}
+
+.caixa--flex{
+    display: flex;
+    flex-flow: column nowrap;
+    width: calc((100% / 3 ) - 60px );
+}
+
+.Especialidades__img{
+    border-radius: 5px 5px 0 0;
+}
+
+.Especialidades__container-p{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
     justify-content: center;
 }
 
-.navegador__itens{
-    color: black;
-    margin: 10px;
-    text-decoration: none;
-    border-bottom: #04D9D9 solid 1px;
-}
+.Especialidades__link{
+    width: 120px;
+    margin: 35px auto 0 auto;
+    background-color: #04D9D9;
+    padding: 15px 20px;
 
-.navegador__itens:hover{
-    font-weight: bold;
-    border-bottom: #04D9D9 solid 3px;
-}
-
-/* Ortopedia */
-
-.cabecario-p{
     text-align: center;
-    padding-top:10vh ;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    color: #fff;
 }
 
-.cabecario__esplicacao{
-    width: 60%;
-    margin: 0 auto;
+.Especialidades__link:hover{
+    color: #265D73;
 }
 
-.tabela{
-    padding-top: 20px ;
+/* Contato */
+.contato{
+    padding-top: 10vh;
+}
+
+.contato--flex{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.tabela__caixa{
-    width: 30%;
+.contato__titulo{
+    box-sizing: border-box;
+    margin: 5px;
 }
 
-.tabela__img{
-    width: 100%;
-    height: 100%;
+.contato__paragrafo{
+    width: 60%;
+    text-align: center;
+    margin: 10px;
 }
 
-table{
-    width: 100%;
-    text-align: left;
-}
-
-th{
-    border-spacing: 20px;
+.mapa{
+    box-sizing: border-box;
 }
 
 @media (max-width: 425px){
-    
-    .cabecario{
-        position: static;
-    }
-
-    .cabecario--flex{
-        height: auto;
-        display: flex;
-        flex-flow: column nowrap;
-    }
-
-    .cabecario__link-log{
-        margin: 0 auto;
-        width: 30%;
-    }
-
-    .cabecario__nav{
-        width: 90%;
-        margin: 0 auto;
-        border-top: solid 1px #000000ab;
-    }
-    
     .btn--atividade{
         display: revert;
     }
@@ -335,28 +227,6 @@ th{
 }
 
 @media (min-width: 426px) and (max-width: 768px){
-    
-    .cabecario{
-        position: static;
-    }
-
-    .cabecario--flex{
-        height: auto;
-        display: flex;
-        flex-flow: column nowrap;
-    }
-
-    .cabecario__link-log{
-        margin: 0 auto;
-        width: 30%;
-    }
-
-    .cabecario__nav{
-        width: 90%;
-        margin: 0 auto;
-        border-top: solid 1px #000000ab;
-    }
-
     .btn--atividade{
         display: revert;
     }
@@ -406,3 +276,4 @@ th{
         height: 500px;
     }
 }
+

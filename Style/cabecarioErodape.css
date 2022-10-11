@@ -105,3 +105,51 @@ img{
     font-size: 18px;
     padding: 5px;
 }
+
+@media (max-width: 425px){
+    
+    .cabecario{
+        position: static;
+    }
+
+    .cabecario--flex{
+        height: auto;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .cabecario__link-log{
+        margin: 0 auto;
+        width: 30%;
+    }
+
+    .cabecario__nav{
+        width: 90%;
+        margin: 0 auto;
+        border-top: solid 1px #000000ab;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+    
+    .cabecario{
+        position: static;
+    }
+
+    .cabecario--flex{
+        height: auto;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .cabecario__link-log{
+        margin: 0 auto;
+        width: 30%;
+    }
+
+    .cabecario__nav{
+        width: 90%;
+        margin: 0 auto;
+        border-top: solid 1px #000000ab;
+    }
+}
