@@ -1,3 +1,3 @@
-# Compatibilidade_de_tela
+# site de atendimento
 
-web site para inicializar
+Um Web site que visa mostrar a compatibilidade da tela para multe telas como celular, monitores normais, tabletes e monitores ultrawide.
